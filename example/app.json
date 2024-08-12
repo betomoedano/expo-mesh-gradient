@@ -13,7 +13,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "expo.modules.meshgradient.example"
+      "bundleIdentifier": "expo.modules.meshgradient.example",
+      "deploymentTarget": "18.0"
     },
     "android": {
       "adaptiveIcon": {

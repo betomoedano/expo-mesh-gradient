@@ -20,7 +20,7 @@ public class ExpoMeshGradientModule: Module {
 
     // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
     Function("hello") {
-      return "Hello world! 👋"
+      return "Hello Expo Module! 👋"
     }
 
     // Defines a JavaScript function that always returns a Promise and whose native code
@@ -36,8 +36,8 @@ public class ExpoMeshGradientModule: Module {
     // view definition: Prop, Events.
     View(ExpoMeshGradientView.self) {
       // Defines a setter for the `name` prop.
-      Prop("name") { (view: ExpoMeshGradientView, prop: String) in
-        print(prop)
+      Prop("ignoreSafeAreaInsets") { (view: ExpoMeshGradientView, prop: Bool) in
+        view.props.ignoreSafeAreaInsets = prop
       }
     }
   }

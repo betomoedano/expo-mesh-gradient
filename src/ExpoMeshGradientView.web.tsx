@@ -1,11 +1,7 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { ExpoMeshGradientViewProps } from './ExpoMeshGradient.types';
+import { ExpoMeshGradientProps } from "./ExpoMeshGradient.types";
 
-export default function ExpoMeshGradientView(props: ExpoMeshGradientViewProps) {
-  return (
-    <div>
-      <span>{props.name}</span>
-    </div>
-  );
+export default function ExpoMeshGradientView(props: ExpoMeshGradientProps) {
+  return <div></div>;
 }

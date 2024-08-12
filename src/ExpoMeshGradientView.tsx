@@ -1,11 +1,11 @@
-import { requireNativeViewManager } from 'expo-modules-core';
-import * as React from 'react';
+import { requireNativeViewManager } from "expo-modules-core";
+import * as React from "react";
 
-import { ExpoMeshGradientViewProps } from './ExpoMeshGradient.types';
+import { ExpoMeshGradientProps } from "./ExpoMeshGradient.types";
 
-const NativeView: React.ComponentType<ExpoMeshGradientViewProps> =
-  requireNativeViewManager('ExpoMeshGradient');
+const NativeView: React.ComponentType<ExpoMeshGradientProps> =
+  requireNativeViewManager("ExpoMeshGradient");
 
-export default function ExpoMeshGradientView(props: ExpoMeshGradientViewProps) {
+export default function ExpoMeshGradientView(props: ExpoMeshGradientProps) {
   return <NativeView {...props} />;
 }
